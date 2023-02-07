@@ -24,4 +24,4 @@ jobs:
             ${{ matrix.node-version }}
             # <-- cache: 'npm'
       - run: npm install
-      - run: npm test
+      - run: ./node_modules/.bin/mocha test.spec.js
